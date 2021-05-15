@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Receipt" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1de30fab-dad7-46d8-b441-237a5cc2f633">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<queryString>
+		<![CDATA[SELECT
+     SALES.`CUSID` AS SALES_CUSID,
+     SALES.`customername` AS SALES_customername,
+     SALES.`CUSTOMERPh` AS SALES_CUSTOMERPh,
+     SALES.`totalqty` AS SALES_totalqty,
+     SALES.`totalitems` AS SALES_totalitems,
+     SALES.`paymode` AS SALES_paymode,
+     SALES.`balanceamount` AS SALES_balanceamount,
+     SALES.`currentamount` AS SALES_currentamount,
+     SALES.`netamount` AS SALES_netamount,
+     SALES.`DATE` AS SALES_DATE
+FROM
+     `SALES` SALES]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="132" y="17" width="318" height="43" uuid="dd40644e-009d-4d0d-847c-de0d5586ba95"/>
+				<textElement markup="none">
+					<font size="32"/>
+				</textElement>
+				<text><![CDATA[TANISH TRADING]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="143" y="0" width="378" height="20" uuid="e2f49819-b91f-490f-82e6-529986c105a6"/>
+				<text><![CDATA[325/A,New Mankapur,Nagpur,Maharashtra 440030 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="20" width="142" height="20" uuid="74cd9831-d31c-47ff-b9de-6ae7368a33f7"/>
+				<text><![CDATA[3456987423/9854376512]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="20" uuid="a89e021a-f767-4516-8208-b384bccf5c0a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="127" height="20" uuid="d4abd834-e718-4bb1-8190-ec00462e3841"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Customer Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="31" width="100" height="20" uuid="0a02c6f8-629a-4a43-a7ba-742004187e5d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Bill Type:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="3b308560-d4af-4a55-95b1-34bc5583dace"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Product Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="62" height="20" uuid="49270a19-a006-4bf9-8621-707fe7e96dcd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[QTY:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="0" width="85" height="20" uuid="5cfff694-1fd1-4dac-b1aa-10359ca9937b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Free]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="0" width="70" height="20" uuid="15584fb8-96e1-4dd3-88d2-83a939964db1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Disc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="0" width="70" height="20" uuid="7f4c5c5e-ad53-495a-8a23-f548f7d5c18a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[MRP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="387" y="0" width="100" height="20" uuid="569e1257-b653-42e3-96a0-f1cff0cc244e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="142" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="176" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="3892b83e-e676-4b7f-81ba-dfaae48e3ab6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Total Item:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="0" width="100" height="20" uuid="f96d35ee-7c25-4b82-b271-ffa8a1956134"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Total Qty:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="57" width="132" height="20" uuid="ec0a2ffb-2218-45ea-b766-1981bb1f31bb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Balance Amount:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="91" width="127" height="20" uuid="35f40156-3ca6-467c-989c-d5d32d77cc17"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Current Amount:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="132" width="127" height="20" uuid="7e980af2-938a-47e7-9eca-bb18973a76a6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Net Amount:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="152" width="170" height="20" uuid="01814021-e343-49f2-836d-6053869ec9cb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Authorized Signator]]></text>
+			</staticText>
+			<line>
+				<reportElement x="294" y="150" width="193" height="2" uuid="7fd8c160-b352-4c30-b29c-77c843b0297e"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="144" splitType="Stretch"/>
+	</summary>
+</jasperReport>
