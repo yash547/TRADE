@@ -1,0 +1,60 @@
+-- MySQL dump 10.13  Distrib 8.0.22, for macos10.15 (x86_64)
+--
+-- Host: 127.0.0.1    Database: Trade
+-- ------------------------------------------------------
+-- Server version	8.0.22
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `CUSTOMERDUE`
+--
+
+DROP TABLE IF EXISTS `CUSTOMERDUE`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `CUSTOMERDUE` (
+  `salesid` int NOT NULL AUTO_INCREMENT,
+  `CUSID` int NOT NULL,
+  `CUSTOMERNAME` varchar(250) NOT NULL,
+  `CUSTOMERPH` varchar(250) NOT NULL,
+  `TOTALQTY` varchar(250) NOT NULL,
+  `TOTALITEMS` varchar(250) NOT NULL,
+  `PAYMODE` varchar(250) NOT NULL,
+  `BALANCEAMOUNT` varchar(250) NOT NULL,
+  `CURRENTAMOUNT` varchar(250) NOT NULL,
+  `NETAMOUNT` varchar(250) NOT NULL,
+  `DATE` varchar(250) NOT NULL,
+  PRIMARY KEY (`salesid`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `CUSTOMERDUE`
+--
+
+LOCK TABLES `CUSTOMERDUE` WRITE;
+/*!40000 ALTER TABLE `CUSTOMERDUE` DISABLE KEYS */;
+INSERT INTO `CUSTOMERDUE` VALUES (1,4,'M','435','90.0','2.0','','0','2100','2228','11/30/20'),(2,4,'M','435','8.0','2.0','','226.0','200','426','11/30/20'),(3,2,'k','546456','1092.0','2.0','','173875.0','33333','207208','12/6/20'),(4,4,'m','435','180.0','4.0','udhari','1706.0','2334','4040','12/6/20'),(5,4,'m','435','10.0','2.0','udhari','567.0','3000','3567','12/9/20'),(6,6,'y','587578','30.0','2.0','udhari','0','9021','9021','12/10/20'),(7,7,'vaidehi','34','108.0','2.0','udhari','0','17782','17782','12/14/20'),(8,8,'p','43','90.0','2.0','','1.2609159E7','123344','12732503','12/19/20'),(9,8,'p','43','340.0','10.0','udhari','0','84490','84490','12/20/20'),(10,2,'k','5454','55.0','2.0','','11601.0','2','11603','12/24/20'),(11,9,'saurabh]','3','8.0','4.0','udhari','0','3576','3576','12/24/20'),(12,10,'krishna','56','132.0','2.0','udhari','0','6840','6840','1/9/21'),(13,10,'krishna','56','405.0','9.0','udhari','13316.0','4000','17316','1/9/21'),(14,12,'ani','12345','24.0','6.0','udhari','0','780','780','2/23/21'),(15,12,'ani','12345','12.0','2.0','udhare','236.0','4998','5234','3/1/21'),(16,12,'ani','12345','102.0','3.0','udharii1','3710.0','6793','10503','3/1/21'),(17,12,'ani','12345','12.0','3.0','udhari','685.0','2000','2685','3/27/21');
+/*!40000 ALTER TABLE `CUSTOMERDUE` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-05-21 18:54:21
