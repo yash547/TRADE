@@ -13,7 +13,7 @@ import dashboard.MASTERLOGIN.Master_Log;
 
 /**
  *
- * @author Priyanka
+ * @author yash mishra
  */
 public class HomeDashBoard extends javax.swing.JFrame {
 
