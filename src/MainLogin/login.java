@@ -13,7 +13,7 @@ import dashboard.HomeDashBoard;
 
 /**
  *
- * @author Priyanka
+ * @author yash mishra
  */
 public class login extends javax.swing.JFrame {
 
